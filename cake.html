@@ -43,6 +43,47 @@
   <p>When are winners announced?</p>
 </section>
 
+  <section class="card">
+  <h2>Helpful Questions</h2>
+
+  <div class="button-group">
+    <button class="quiet-button" onclick="showAnswer('enterCake')">
+      How do I enter my cake?
+    </button>
+
+    <button class="quiet-button" onclick="showAnswer('ageCategories')">
+      What age categories are available?
+    </button>
+
+    <button class="quiet-button" onclick="showAnswer('judgingBegins')">
+      When does judging begin?
+    </button>
+
+    <button class="quiet-button" onclick="showAnswer('winnersAnnounced')">
+      When are winners announced?
+    </button>
+  </div>
+
+  <div id="enterCake" class="discover-text" hidden>
+    Bring your completed rosette cake to the Rosette Cake Tent before judging begins.
+    A steward will record your name and age category before placing your entry for display.
+  </div>
+
+  <div id="ageCategories" class="discover-text" hidden>
+    The competition includes Junior, Youth, and Adult categories,
+    so bakers of all ages can take part.
+  </div>
+
+  <div id="judgingBegins" class="discover-text" hidden>
+    Judging begins at 11:30am promptly.
+    Please ensure your cake is submitted before this time.
+  </div>
+
+  <div id="winnersAnnounced" class="discover-text" hidden>
+    Winners will be announced during the afternoon prize presentation at 1:30pm.
+  </div>
+</section>
+
   <div class="button-group">
     <a href="index.html" class="quiet-button">Back to Event Hub</a>
   </div>
@@ -51,6 +92,16 @@
     Powered by IdexQR<sup>®</sup>
   </p>
 
+  <script>
+function showAnswer(id) {
+  document.querySelectorAll('.discover-text').forEach(el => {
+    el.hidden = true;
+  });
+
+  document.getElementById(id).hidden = false;
+}
+</script>
+  
 </main>
 </body>
 </html>
