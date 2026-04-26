@@ -101,3 +101,9 @@ h2 {
 .back-link a:hover {
   text-decoration: underline;
 }
+
+.powered-by {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
