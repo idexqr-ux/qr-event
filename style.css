@@ -117,3 +117,11 @@ h2 {
   color: #9aa6a2;
   opacity: 0.8;
 }
+
+.silks {
+  width: 56px;
+  height: auto;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  display: block;
+}
