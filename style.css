@@ -27,6 +27,7 @@ body {
   width: 100%;
   max-width: 360px;
   display: block;
+  --bg: #f7f4ee;
   margin: 0 auto 16px;
   opacity: 0.8;
 }
