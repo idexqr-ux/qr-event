@@ -3,12 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>The Matchem Charity Hobby Horse Race — Matchem Village Charity Event</title>
-<meta
-  name="description"
-  content="Meet the runners and back your favourite in the Matchem Charity Hobby Horse Race."
-/>
-<link rel="stylesheet" href="style.css?v=2" />
+
+  <title>The Matchem Charity Hobby Horse Race — Matchem Village Charity Event</title>
+  <meta
+    name="description"
+    content="Meet the runners and back your favourite in the Matchem Charity Hobby Horse Race."
+  />
+
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 
 <body>
@@ -17,8 +19,8 @@
   <h1 id="page-title" class="sr-only">The Matchem Charity Hobby Horse Race</h1>
 
   <p class="sr-only">
-    You have opened The Matchem Charity Hobby Horse Race page. 
-    Here you can view today’s runners and hear how the race works, learn the rules, 
+    You have opened The Matchem Charity Hobby Horse Race page.
+    Here you can view today’s runners and hear how the race works, learn the rules,
     and explore the course obstacles. Tap a button below to hear more.
   </p>
 
@@ -26,19 +28,19 @@
 
   <p class="sub">The feature race on the village green</p>
 
- <p class="intro">
-  Today’s runners will tackle the famous Matchem course, featuring the Apple Bucket Challenge,
-  the Splash Fence, the Mini Hurdles, and the Willow Cottage Finishing Straight.
-</p>
+  <p class="intro">
+    Today’s runners will tackle the famous Matchem course, featuring the Apple Bucket Challenge,
+    the Splash Fence, the Mini Hurdles, and the Willow Cottage Finishing Straight.
+  </p>
 
   <section class="card">
-    <h2>How it works</h2>  <!-- Future: Replace rule cards with audio/Ask interaction -->
+    <h2>How it works</h2>
     <p>Back your favourite hobby horse for £2 and support today’s charity.</p>
     <p>After the race, one supporter of the winning hobby horse will be drawn at random for the prize.</p>
   </section>
 
   <section class="card">
-    <h2>Official Race Rules</h2>  <!-- Future: Replace rule cards with audio/Ask interaction -->
+    <h2>Official Race Rules</h2>
     <p>All runners must remain mounted on their hobby horse at all times.</p>
     <p>Competitors must retrieve one apple from the bucket before continuing.</p>
     <p>The Splash Fence and Mini Hurdles must be attempted in full.</p>
@@ -47,171 +49,202 @@
     <p>In the event of dispute, the stewards’ decision is final, especially if delivered while holding tea.</p>
   </section>
 
-  <section class="card">
-  
- <section class="card">
-  <section class="runner-list" aria-label="Today’s runners">
+  <section class="card runner-list" aria-label="Today’s runners">
     <h2>Today’s Runners</h2>
 
     <div class="runner-card">
       <div class="runner-info">
         <h3>1. Pixel Pony</h3>
-        <p class="silks">Silks for Pixel Pony</p>
+        <img src="images/pixel-pony-silks.png" alt="Silks for Pixel Pony" class="silks" />
         <p><strong>Trainer:</strong> Gary Poet</p>
         <p><strong>Rider:</strong> Poppy Skip</p>
         <p><strong>Owner:</strong> Discover Partnership</p>
       </div>
+
       <div class="runner-action">
-        <button class="quiet-button" onclick="playSection('pixel-pony', 'pixelPonyText')">Hear more</button>
+        <button class="quiet-button" onclick="playSection('pixel-pony', 'pixelPonyText')">
+          Hear more
+        </button>
       </div>
     </div>
 
     <audio id="pixel-pony" preload="none">
       <source src="audio/pixel-pony.mp3" type="audio/mpeg">
     </audio>
+
     <div id="pixelPonyText" class="discover-text" hidden>
       Pixel Pony is a quick-thinking runner who always seems one step ahead of the others.
     </div>
 
+
     <div class="runner-card">
       <div class="runner-info">
         <h3>2. Insta Star</h3>
-        <p class="silks">Silks for Insta Star</p>
+        <img src="images/insta-star-silks.png" alt="Silks for Insta Star" class="silks" />
         <p><strong>Trainer:</strong> Miss Posy</p>
         <p><strong>Rider:</strong> Freddie Flash</p>
         <p><strong>Owner:</strong> Listen Racing</p>
       </div>
+
       <div class="runner-action">
-        <button class="quiet-button" onclick="playSection('insta-star', 'instaStarText')">Hear more</button>
+        <button class="quiet-button" onclick="playSection('insta-star', 'instaStarText')">
+          Hear more
+        </button>
       </div>
     </div>
 
     <audio id="insta-star" preload="none">
       <source src="audio/insta-star.mp3" type="audio/mpeg">
     </audio>
+
     <div id="instaStarText" class="discover-text" hidden>
       Insta Star loves the spotlight and usually waves to the crowd on the way round.
     </div>
 
+
     <div class="runner-card">
       <div class="runner-info">
         <h3>3. Hoodie</h3>
-        <p class="silks">Silks for Hoodie</p>
+        <img src="images/hoodie-silks.png" alt="Silks for Hoodie" class="silks" />
         <p><strong>Trainer:</strong> Andy Pullover</p>
         <p><strong>Rider:</strong> Bella Bounce</p>
         <p><strong>Owner:</strong> Ask Syndicate</p>
       </div>
+
       <div class="runner-action">
-        <button class="quiet-button" onclick="playSection('hoodie', 'hoodieText')">Hear more</button>
+        <button class="quiet-button" onclick="playSection('hoodie', 'hoodieText')">
+          Hear more
+        </button>
       </div>
     </div>
 
     <audio id="hoodie" preload="none">
       <source src="audio/hoodie.mp3" type="audio/mpeg">
     </audio>
+
     <div id="hoodieText" class="discover-text" hidden>
       Hoodie is a cosy competitor who runs best once properly warmed up.
     </div>
 
+
     <div class="runner-card">
       <div class="runner-info">
         <h3>4. Ice Lolly</h3>
-        <p class="silks">Silks for Ice Lolly</p>
+        <img src="images/ice-lolly-silks.png" alt="Silks for Ice Lolly" class="silks" />
         <p><strong>Trainer:</strong> Jack Frost</p>
         <p><strong>Rider:</strong> Tommy Toes</p>
         <p><strong>Owner:</strong> EntryHub Partners</p>
       </div>
+
       <div class="runner-action">
-        <button class="quiet-button" onclick="playSection('ice-lolly', 'iceLollyText')">Hear more</button>
+        <button class="quiet-button" onclick="playSection('ice-lolly', 'iceLollyText')">
+          Hear more
+        </button>
       </div>
     </div>
 
     <audio id="ice-lolly" preload="none">
       <source src="audio/ice-lolly.mp3" type="audio/mpeg">
     </audio>
+
     <div id="iceLollyText" class="discover-text" hidden>
       Ice Lolly is cool under pressure, but the sunshine may bring out an extra turn of speed.
     </div>
 
+
     <div class="runner-card">
       <div class="runner-info">
         <h3>5. Jelly Bean Jet</h3>
-        <p class="silks">Silks for Jelly Bean Jet</p>
+        <img src="images/jelly-bean-jet-silks.png" alt="Silks for Jelly Bean Jet" class="silks" />
         <p><strong>Trainer:</strong> Ava Sweet</p>
         <p><strong>Rider:</strong> Lola Leap</p>
         <p><strong>Owner:</strong> Hold Partnership</p>
       </div>
+
       <div class="runner-action">
-        <button class="quiet-button" onclick="playSection('jelly-bean-jet', 'jellyBeanJetText')">Hear more</button>
+        <button class="quiet-button" onclick="playSection('jelly-bean-jet', 'jellyBeanJetText')">
+          Hear more
+        </button>
       </div>
     </div>
 
     <audio id="jelly-bean-jet" preload="none">
       <source src="audio/jelly-bean-jet.mp3" type="audio/mpeg">
     </audio>
+
     <div id="jellyBeanJetText" class="discover-text" hidden>
       Jelly Bean Jet has bursts of speed that can surprise even the stewards.
     </div>
 
+
     <div class="runner-card">
       <div class="runner-info">
         <h3>6. Turbo Teddy</h3>
-        <p class="silks">Silks for Turbo Teddy</p>
+        <img src="images/turbo-teddy-silks.png" alt="Silks for Turbo Teddy" class="silks" />
         <p><strong>Trainer:</strong> Mr Cuddles</p>
         <p><strong>Rider:</strong> Max Zoom</p>
         <p><strong>Owner:</strong> Know &amp; Co.</p>
       </div>
+
       <div class="runner-action">
-        <button class="quiet-button" onclick="playSection('turbo-teddy', 'turboTeddyText')">Hear more</button>
+        <button class="quiet-button" onclick="playSection('turbo-teddy', 'turboTeddyText')">
+          Hear more
+        </button>
       </div>
     </div>
 
     <audio id="turbo-teddy" preload="none">
       <source src="audio/turbo-teddy.mp3" type="audio/mpeg">
     </audio>
+
     <div id="turboTeddyText" class="discover-text" hidden>
       Turbo Teddy is hugely popular and always gives everything to the finish.
     </div>
   </section>
-</section>
-    
-<audio id="race-intro" preload="none">
-  <source src="audio/race-intro.mp3" type="audio/mpeg">
-</audio>
 
-<div id="raceIntroText" class="discover-text" hidden>
-  Welcome to the Matchem Village Charity Race Day, where our brave runners
-  gather at Willow Cottage for a little chaos, a little courage, and a lot of cheering.
-</div>
+  <div class="button-group race-buttons">
+    <button class="quiet-button" onclick="playSection('race-intro', 'raceIntroText')">
+      Race Introduction
+    </button>
 
+    <button class="quiet-button" onclick="playSection('runners-and-riders', 'runnersText')">
+      Runners and Riders
+    </button>
 
-<button class="quiet-button" onclick="playSection('runners-and-riders', 'runnersText')">
-  Runners and Riders
-</button>
+    <button class="quiet-button" onclick="playSection('course-obstacles', 'courseText')">
+      Course Obstacles
+    </button>
+  </div>
 
-<div id="runnersText" class="discover-text" hidden>
-  Meet today’s runners and riders, each ready to take on the famous Matchem course
-  with determination, style, and possibly questionable steering.
-</div>
-<audio id="runners-and-riders" preload="none">
-  <source src="audio/runners-and-riders.mp3" type="audio/mpeg">
-</audio>    
-    
-  <button class="quiet-button" onclick="playSection('course-obstacles', 'courseText')">
-  Course Obstacles
-</button>
+  <audio id="race-intro" preload="none">
+    <source src="audio/race-intro.mp3" type="audio/mpeg">
+  </audio>
 
-<audio id="course-obstacles" preload="none">
-  <source src="audio/course-obstacles.mp3" type="audio/mpeg">
-</audio>
+  <div id="raceIntroText" class="discover-text" hidden>
+    Welcome to the Matchem Village Charity Race Day, where our brave runners
+    gather at Willow Cottage for a little chaos, a little courage, and a lot of cheering.
+  </div>
 
-<div id="courseText" class="discover-text" hidden>
-  Our runners today will take on the famous Matchem course:
-  the Apple Bucket Challenge, the daring Splash Fence, and the fearsome Mini Hurdles,
-  before the final charge along the Willow Cottage Home Straight to the cheering crowds —
-  this is where legends are made.
-</div>
-  
+  <audio id="runners-and-riders" preload="none">
+    <source src="audio/runners-and-riders.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="runnersText" class="discover-text" hidden>
+    Meet today’s runners and riders, each ready to take on the famous Matchem course
+    with determination, style, and possibly questionable steering.
+  </div>
+
+  <audio id="course-obstacles" preload="none">
+    <source src="audio/course-obstacles.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="courseText" class="discover-text" hidden>
+    Our runners today will take on the famous Matchem course:
+    the Apple Bucket Challenge, the daring Splash Fence, and the fearsome Mini Hurdles,
+    before the final charge along the Willow Cottage Home Straight to the cheering crowds —
+    this is where legends are made.
+  </div>
+
   <div class="button-group">
     <a href="index.html" class="quiet-button">Back to Event Hub</a>
   </div>
@@ -221,7 +254,8 @@
   </p>
 
 </main>
-  <script>
+
+<script>
 function playSection(audioId, textId) {
   document.querySelectorAll('audio').forEach(audio => {
     audio.pause();
@@ -244,5 +278,6 @@ function playSection(audioId, textId) {
   }
 }
 </script>
+
 </body>
 </html>
