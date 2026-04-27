@@ -178,6 +178,52 @@ h2 {
   border-radius: 18px;
 }
 
+.map-wrap {
+  position: relative;
+  max-width: 720px;
+  margin: 24px auto;
+}
+
+.map-point {
+  position: absolute;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(201, 213, 208, 0.95);
+  border: 1px solid var(--button-border);
+  font-size: 0.85rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.map-point.active {
+  opacity: 1;
+}
+
+#loos { top: 72%; left: 18%; }
+#parade { top: 42%; left: 48%; }
+#entrance { top: 82%; left: 32%; }
+
+.course-dot {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(80, 105, 95, 0.85);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dot-1 { top: 62%; left: 40%; }
+.dot-2 { top: 54%; left: 50%; }
+.dot-3 { top: 45%; left: 62%; }
+.dot-4 { top: 36%; left: 54%; }
+.dot-5 { top: 44%; left: 42%; }
+
+.course-dot.active {
+  opacity: 1;
+}
+
 .feature-image {
   width: 100%;
   max-width: 320px;
