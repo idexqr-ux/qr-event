@@ -231,13 +231,13 @@ h2 {
   pointer-events: none;
 }
 
-.dot-1 { top: 72%; left: 73%; }  /* onto track */
+.dot-1 { top: 72%; left: 69%; }  /* onto track */
 .dot-2 { top: 59%; left: 86%; }  /* good */
-.dot-3 { top: 29%; left: 84%; }  /* up */
-.dot-4 { top: 17%; left: 61%; }  /* up */
-.dot-5 { top: 21%; left: 28%; }  /* up */
-.dot-6 { top: 52%; left: 10%; }  /* left */
-.dot-7 { top: 81%; left: 23%; }  /* down */
+.dot-3 { top: 27%; left: 84%; }  /* up */
+.dot-4 { top: 27%; left: 61%; }  /* up */
+.dot-5 { top: 21%; left: 28%; }  /* good */
+.dot-6 { top: 48%; left: 10%; }  /* left */
+.dot-7 { top: 91%; left: 23%; }  /* down */
 .dot-8 { top: 81%; left: 45%; }  /* left + down */
 
 .course-dot {
