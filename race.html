@@ -95,32 +95,32 @@
 
   <div class="button-group race-buttons">
 
-<button class="quiet-button" onclick="playSection('race-intro')">
+<button class="quiet-button" onclick="playSection('race-intro', 'raceIntroText')">
   Race Introduction
 </button>
-
-<div id="race-intro-text" class="section-text hidden">
-  <p>
-    Welcome to the Matchem Village Charity Race Day, where our brave runners
-    gather at Willow Cottage for a little chaos, a little courage, and a lot of cheering.
-  </p>
-</div>
 
 <audio id="race-intro" preload="none">
   <source src="audio/race-intro.mp3" type="audio/mpeg">
 </audio>
 
-<button class="quiet-button" onclick="playSection('runners-and-riders')">
+<div id="raceIntroText" class="discover-text" hidden>
+  Welcome to the Matchem Village Charity Race Day, where our brave runners
+  gather at Willow Cottage for a little chaos, a little courage, and a lot of cheering.
+</div>
+
+
+<button class="quiet-button" onclick="playSection('runners-and-riders', 'runnersText')">
   Runners and Riders
 </button>
 
-<div id="runners-and-riders-text" class="section-text hidden">
-  <p>
-    Meet today’s runners and riders, each ready to take on the famous Matchem course
-    with determination, style, and possibly questionable steering.
-  </p>
-</div>
+<audio id="runners-and-riders" preload="none">
+  <source src="audio/runners-and-riders.mp3" type="audio/mpeg">
+</audio>
 
+<div id="runnersText" class="discover-text" hidden>
+  Meet today’s runners and riders, each ready to take on the famous Matchem course
+  with determination, style, and possibly questionable steering.
+</div>
 <audio id="runners-and-riders" preload="none">
   <source src="audio/runners-and-riders.mp3" type="audio/mpeg">
 </audio>    
