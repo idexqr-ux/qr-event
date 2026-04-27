@@ -25,10 +25,10 @@ body {
 
 .bunting {
   width: 100%;
-  max-width: 420px;
+  max-width: 360px;
   display: block;
-  margin: 0 auto 18px;
-  opacity: 0.9;
+  margin: 0 auto 16px;
+  opacity: 0.8;
 }
 
 h1 {
