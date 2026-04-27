@@ -26,21 +26,19 @@
 
   <h1 aria-hidden="true">The Matchem Charity Hobby Horse Race</h1>
 
-  <p class="sub">The feature race on the village green</p>
-
   <p class="intro">
-    Today’s runners will tackle the famous Matchem course, featuring the Apple Bucket Challenge,
-    the Splash Fence, the Mini Hurdles, and the Willow Cottage Finishing Straight.
-  </p>
-
+  Today’s runners will take on the famous Matchem course, with the Apple Bucket Challenge,
+  the Splash Fence, the Mini Hurdles, and the Willow Cottage Finishing Straight still to come.
+</p>
+  
   <section class="card">
     <h2>How it works</h2>
-    <p>Back your favourite hobby horse for £2 and support today’s charity.</p>
+    <p>Back your favourite hobby horse for £2 and help support today’s charity.</p>
     <p>After the race, one supporter of the winning hobby horse will be drawn at random for the prize.</p>
   </section>
 
   <section class="card">
-    <h2>Official Race Rules</h2>
+    <h2>Race Rules</h2>
     <p>All runners must remain mounted on their hobby horse at all times.</p>
     <p>Competitors must retrieve one apple from the bucket before continuing.</p>
     <p>The Splash Fence and Mini Hurdles must be attempted in full.</p>
@@ -202,19 +200,23 @@
     </div>
   </section>
 
-  <div class="button-group race-buttons">
-    <button class="quiet-button" onclick="playSection('race-intro', 'raceIntroText')">
-      Race Introduction
-    </button>
+ <div class="button-group race-buttons">
+  <button class="quiet-button" onclick="playSection('race-intro', 'raceIntroText')">
+    Race introduction
+  </button>
 
-    <button class="quiet-button" onclick="playSection('runners-and-riders', 'runnersText')">
-      Runners and Riders
-    </button>
+  <button class="quiet-button" onclick="playSection('runners-and-riders', 'runnersText')">
+    Runners and riders
+  </button>
 
-    <button class="quiet-button" onclick="playSection('course-obstacles', 'courseText')">
-      Course Obstacles
-    </button>
-  </div>
+  <button class="quiet-button" onclick="playSection('course-obstacles', 'courseText')">
+    Course obstacles
+  </button>
+
+  <button class="quiet-button" onclick="stopAudio()">
+    Stop audio
+  </button>
+</div>
 
   <audio id="race-intro" preload="none">
     <source src="audio/race-intro.mp3" type="audio/mpeg">
@@ -246,7 +248,7 @@
   </div>
 
   <div class="button-group">
-    <a href="index.html" class="quiet-button">Back to Event Hub</a>
+   <a href="index.html" class="quiet-button">Back to event hub</a>
   </div>
 
   <p class="powered-by">
@@ -276,6 +278,12 @@ function playSection(audioId, textId) {
   if (selectedAudio) {
     selectedAudio.play();
   }
+}
+function stopAudio() {
+  document.querySelectorAll('audio').forEach(audio => {
+    audio.pause();
+    audio.currentTime = 0;
+  });
 }
 </script>
 
