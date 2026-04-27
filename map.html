@@ -49,3 +49,28 @@
 <p class="powered-by">
   Powered by IdexQR<sup>®</sup>
 </p>
+
+<script>
+function clearMapHighlights() {
+  document.querySelectorAll('.map-point, .course-dot').forEach(el => {
+    el.classList.remove('active');
+  });
+}
+
+function showMapPoint(id) {
+  clearMapHighlights();
+  document.getElementById(id).classList.add('active');
+}
+
+function showCourseRoute() {
+  clearMapHighlights();
+
+  const dots = document.querySelectorAll('.course-dot');
+
+  dots.forEach((dot, index) => {
+    setTimeout(() => {
+      dot.classList.add('active');
+    }, index * 350);
+  });
+}
+</script>
