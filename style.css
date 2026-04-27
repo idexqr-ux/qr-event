@@ -76,10 +76,8 @@ h2 {
 
 .runner-card {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
-  gap: 0;
-  padding: 0;
   margin: 14px 0;
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -94,7 +92,7 @@ h2 {
 
 .runner-action {
   padding: 16px;
-  background: #f4f1ea;   /* soft warm contrast */
+  background: #f4f1ea;
   border-left: 1px solid var(--line);
   display: flex;
   align-items: center;
