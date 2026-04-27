@@ -206,9 +206,20 @@ h2 {
   margin-bottom: 28px;
 }
 
-#loos { top: 78%; left: 24%; }
-#parade { top: 42%; left: 48%; }
-#entrance { top: 84%; left: 63%; }
+#parade {
+  top: 47%;
+  left: 51%;
+}
+
+#entrance {
+  top: 90%;
+  left: 66%;
+}
+
+#loos {
+  top: 87%;
+  left: 40%;
+}
 
 .course-dot {
   position: absolute;
