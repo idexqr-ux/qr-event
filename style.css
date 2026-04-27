@@ -220,13 +220,17 @@ h2 {
   pointer-events: none;
 }
 
-.dot-1 { top: 66%; left: 34%; }
-.dot-2 { top: 56%; left: 48%; }
-.dot-3 { top: 44%; left: 66%; }
-.dot-4 { top: 34%; left: 55%; }
-.dot-5 { top: 43%; left: 35%; }
-.dot-6 { top: 55%; left: 27%; }
-.dot-7 { top: 66%; left: 34%; }
+.dot-1 { top: 68%; left: 34%; }
+.dot-2 { top: 60%; left: 49%; }
+.dot-3 { top: 49%; left: 67%; }
+.dot-4 { top: 36%; left: 59%; }
+.dot-5 { top: 38%; left: 40%; }
+.dot-6 { top: 51%; left: 27%; }
+.dot-7 { top: 64%; left: 27%; }
+
+.course-dot {
+  transition: opacity 0.3s ease;
+}
 
 .course-dot.active {
   opacity: 1;
