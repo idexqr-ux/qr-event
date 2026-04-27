@@ -78,6 +78,10 @@ h2 {
   text-align: center;
 }
 
+.race-buttons {
+  margin-bottom: 24px;
+}
+
 .button-group {
   display: grid;
   gap: 12px;
