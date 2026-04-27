@@ -8,7 +8,7 @@
   name="description"
   content="Enter the Rosette Cake Competition and bring your finest rosette-inspired cake for judging at today’s charity event."
 />
-<link rel="stylesheet" href="style.css?v=1" />
+<link rel="stylesheet" href="style.css?v=2" />
 </head>
 
 <body>
@@ -39,21 +39,35 @@
   </section>
   
  <section class="card">
-    <h2>Need to Know More?</h2>
+  <h2>Need to Know More?</h2>
 
-    <div class="button-group">
-      <button class="quiet-button" onclick="showAnswer('enterCake')">
-        How do I enter my cake?
-      </button>
+  <div class="button-group">
 
-    <button class="quiet-button" onclick="showAnswer('ageCategories')">
+    <button class="quiet-button" onclick="playSection('enter-cake', 'enterCake')">
+      How do I enter my cake?
+    </button>
+
+    <button class="quiet-button" onclick="playSection('cake-categories', 'ageCategories')">
       What age categories are available?
     </button>
 
-    <button class="quiet-button" onclick="showAnswer('winnersAnnounced')">
+    <button class="quiet-button" onclick="playSection('cake-results', 'winnersAnnounced')">
       When are winners announced?
     </button>
+
   </div>
+
+  <audio id="enter-cake" preload="none">
+    <source src="audio/enter-cake.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="cake-categories" preload="none">
+    <source src="audio/cake-categories.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="cake-results" preload="none">
+    <source src="audio/cake-results.mp3" type="audio/mpeg">
+  </audio>
 
   <div id="enterCake" class="discover-text" hidden>
     Bring your completed rosette cake to the Rosette Cake Tent before judging begins.
@@ -65,16 +79,11 @@
     so bakers of all ages can take part.
   </div>
 
-  <div id="judgingBegins" class="discover-text" hidden>
-    Judging begins at 11:30am promptly.
-    Please ensure your cake is submitted before this time.
-  </div>
-
   <div id="winnersAnnounced" class="discover-text" hidden>
     Winners will be announced during the afternoon prize presentation at 1:30pm.
   </div>
-</section>
 
+</section>
   <div class="button-group">
     <a href="index.html" class="quiet-button">Back to Event Hub</a>
   </div>
@@ -84,12 +93,26 @@
   </p>
 
   <script>
-function showAnswer(id) {
-  document.querySelectorAll('.discover-text').forEach(el => {
-    el.hidden = true;
+function playSection(audioId, textId) {
+  document.querySelectorAll('audio').forEach(audio => {
+    audio.pause();
+    audio.currentTime = 0;
   });
 
-  document.getElementById(id).hidden = false;
+  document.querySelectorAll('.discover-text').forEach(text => {
+    text.hidden = true;
+  });
+
+  const selectedAudio = document.getElementById(audioId);
+  const selectedText = document.getElementById(textId);
+
+  if (selectedText) {
+    selectedText.hidden = false;
+  }
+
+  if (selectedAudio) {
+    selectedAudio.play();
+  }
 }
 </script>
   
