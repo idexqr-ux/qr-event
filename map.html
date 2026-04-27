@@ -1,54 +1,70 @@
-<h1>Event Map</h1>
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<p class="intro">
-  Find your way around the village green before the fun begins.
-</p>
+  <title>Event Map — Matchem Village Charity Event</title>
+  <meta name="description" content="Find your way around the Matchem Village Charity Event." />
 
-<section class="sr-only" aria-labelledby="map-description-title">
-  <h2 id="map-description-title">Event map description</h2>
+  <link rel="stylesheet" href="style.css?v=8" />
+</head>
 
-  <p>
-    The entrance and parking are at the bottom of the map.
-    The Cake Tent is near the entrance for easy cake drop-off.
-    The Parade Ring sits in the centre of the village green, with the hobby horse racecourse looping around it.
-    The Oak Tree is also inside the racecourse loop and is one of the treasure hunt landmarks.
-    The Refreshments Tent and Prize Tent are near the top of the green.
-    The Start and Finish area is beside the racecourse, leading into the Willow Cottage Finish Straight.
+<body>
+<main class="wrap hero">
+
+  <h1>Event Map</h1>
+
+  <p class="intro">
+    Find your way around the village green before the fun begins.
   </p>
-</section>
 
-<div class="map-wrap">
-  <img
-    src="images/event-map.png"
-    alt="Illustrated map of The Matchem Village Charity Event."
-    class="event-map"
-  >
+  <section class="sr-only" aria-labelledby="map-description-title">
+    <h2 id="map-description-title">Event map description</h2>
+    <p>
+      The entrance and parking are at the bottom of the map.
+      The Cake Tent is near the entrance for easy cake drop-off.
+      The Parade Ring sits in the centre of the village green, with the hobby horse racecourse looping around it.
+      The Oak Tree is also inside the racecourse loop and is one of the treasure hunt landmarks.
+      The Refreshments Tent and Prize Tent are near the top of the green.
+      The Start and Finish area is beside the racecourse, leading into the Willow Cottage Finish Straight.
+    </p>
+  </section>
 
-  <div id="loos" class="map-point">Loos</div>
-  <div id="parade" class="map-point">Parade Ring</div>
-  <div id="entrance" class="map-point">Entrance</div>
+  <div class="map-wrap">
+    <img
+      src="images/event-map.png"
+      alt="Illustrated map of The Matchem Village Charity Event."
+      class="event-map"
+    >
 
-  <div class="course-dot dot-1"></div>
-  <div class="course-dot dot-2"></div>
-  <div class="course-dot dot-3"></div>
-  <div class="course-dot dot-4"></div>
-  <div class="course-dot dot-5"></div>
-</div>
+    <div id="loos" class="map-point">Loos</div>
+    <div id="parade" class="map-point">Parade Ring</div>
+    <div id="entrance" class="map-point">Entrance</div>
 
-<div class="map-buttons">
-  <button class="quiet-button" onclick="showMapPoint('loos')">Loos</button>
-  <button class="quiet-button" onclick="showMapPoint('parade')">Parade Ring</button>
-  <button class="quiet-button" onclick="showMapPoint('entrance')">Entrance</button>
-  <button class="quiet-button" onclick="showCourseRoute()">Course Route</button>
-</div>
+    <div class="course-dot dot-1"></div>
+    <div class="course-dot dot-2"></div>
+    <div class="course-dot dot-3"></div>
+    <div class="course-dot dot-4"></div>
+    <div class="course-dot dot-5"></div>
+  </div>
 
-<div class="button-group">
-  <a href="index.html" class="quiet-button">Back to Event Hub</a>
-</div>
+  <div class="map-buttons">
+    <button class="quiet-button" onclick="showMapPoint('loos')">Loos</button>
+    <button class="quiet-button" onclick="showMapPoint('parade')">Parade Ring</button>
+    <button class="quiet-button" onclick="showMapPoint('entrance')">Entrance</button>
+    <button class="quiet-button" onclick="showCourseRoute()">Course Route</button>
+  </div>
 
-<p class="powered-by">
-  Powered by IdexQR<sup>®</sup>
-</p>
+  <div class="button-group">
+    <a href="index.html" class="quiet-button">Back to Event Hub</a>
+  </div>
+
+  <p class="powered-by">
+    Powered by IdexQR<sup>®</sup>
+  </p>
+
+</main>
 
 <script>
 function clearMapHighlights() {
@@ -59,7 +75,12 @@ function clearMapHighlights() {
 
 function showMapPoint(id) {
   clearMapHighlights();
-  document.getElementById(id).classList.add('active');
+
+  const point = document.getElementById(id);
+
+  if (point) {
+    point.classList.add('active');
+  }
 }
 
 function showCourseRoute() {
@@ -74,3 +95,6 @@ function showCourseRoute() {
   });
 }
 </script>
+
+</body>
+</html>
