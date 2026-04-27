@@ -212,12 +212,12 @@ h2 {
 }
 
 #entrance {
-  top: 90%;
+  top: 80%;
   left: 62%;
 }
 
 #loos {
-  top: 900%;
+  top: 90%;
   left: 40%;
 }
 
@@ -231,11 +231,11 @@ h2 {
   pointer-events: none;
 }
 
-.dot-1 { top: 32%; left: 84%; }  /* Upper right bend */
+.dot-1 { top: 32%; left: 82%; }  /* Upper right bend */
 .dot-2 { top: 58%; left: 86%; }  /* Right descent */
-.dot-3 { top: 78%; left: 49%; }  /* Bottom straight */
+.dot-3 { top: 68%; left: 49%; }  /* Bottom straight */
 .dot-4 { top: 52%; left: 10%; }  /* Left bend */
-.dot-5 { top: 24%; left: 28%; }  /* Upper left bend */
+.dot-5 { top: 26%; left: 28%; }  /* Upper left bend */
 
 .course-dot {
   transition: opacity 0.3s ease;
