@@ -78,21 +78,27 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 16px;
+  gap: 0;
+  padding: 0;
   margin: 14px 0;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: var(--card);
+  overflow: hidden;
 }
 
-.runner-info h3 {
-  margin: 0 0 8px;
-  font-weight: normal;
+.runner-info {
+  padding: 16px 18px;
+  flex: 1;
 }
 
-.runner-info p {
-  margin: 3px 0;
+.runner-action {
+  padding: 16px;
+  background: #f4f1ea;   /* soft warm contrast */
+  border-left: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .runner-card .quiet-button {
