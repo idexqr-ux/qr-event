@@ -220,13 +220,14 @@ h2 {
   pointer-events: none;
 }
 
-.dot-1 { top: 68%; left: 34%; }
-.dot-2 { top: 60%; left: 49%; }
-.dot-3 { top: 49%; left: 67%; }
-.dot-4 { top: 36%; left: 59%; }
-.dot-5 { top: 38%; left: 40%; }
-.dot-6 { top: 51%; left: 27%; }
-.dot-7 { top: 64%; left: 27%; }
+.dot-1 { top: 74%; left: 73%; }  /* Apple Bucket */
+.dot-2 { top: 59%; left: 86%; }  /* Right bend */
+.dot-3 { top: 32%; left: 84%; }  /* Upper right */
+.dot-4 { top: 20%; left: 61%; }  /* Finish straight */
+.dot-5 { top: 24%; left: 28%; }  /* Upper left */
+.dot-6 { top: 52%; left: 12%; }  /* Left bend */
+.dot-7 { top: 78%; left: 23%; }  /* Splash fence */
+.dot-8 { top: 78%; left: 49%; }  /* Mini hurdles */
 
 .course-dot {
   transition: opacity 0.3s ease;
