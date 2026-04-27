@@ -200,6 +200,12 @@ h2 {
   opacity: 1;
 }
 
+.map-buttons {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
 #loos { top: 72%; left: 18%; }
 #parade { top: 42%; left: 48%; }
 #entrance { top: 82%; left: 32%; }
