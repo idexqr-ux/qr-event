@@ -70,6 +70,46 @@ h2 {
   text-align: left;
 }
 
+.runner-list {
+  margin-top: 28px;
+}
+
+.runner-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  margin: 14px 0;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--card);
+}
+
+.runner-info h3 {
+  margin: 0 0 8px;
+  font-weight: normal;
+}
+
+.runner-info p {
+  margin: 3px 0;
+}
+
+.runner-card .quiet-button {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .runner-card {
+    align-items: flex-start;
+  }
+
+  .runner-card .quiet-button {
+    margin-top: 4px;
+  }
+}
+
 .card p {
   margin: 8px 0;
 }
