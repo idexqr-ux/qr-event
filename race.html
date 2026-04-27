@@ -93,12 +93,22 @@
   <em>Hugely popular and always gives everything to the finish.</em></p>
 </section>
 
-  <button class="quiet-button" onclick="playSection('course-obstacles')">
+  <div class="button-group race-buttons">
+  
+  <button class="quiet-button" onclick="playSection('course-obstacles', 'courseText')">
   Course Obstacles
 </button>
+
 <audio id="course-obstacles" preload="none">
   <source src="audio/course-obstacles.mp3" type="audio/mpeg">
 </audio>
+
+<div id="courseText" class="discover-text" hidden>
+  Our runners today will take on the famous Matchem course:
+  the Apple Bucket Challenge, the daring Splash Fence, and the fearsome Mini Hurdles,
+  before the final charge along the Willow Cottage Home Strait to the cheering crowds —
+  this is where legends are made.
+</div>
   
   <div class="button-group">
     <a href="index.html" class="quiet-button">Back to Event Hub</a>
@@ -110,13 +120,23 @@
 
 </main>
   <script>
-function playSection(id) {
+function playSection(audioId, textId) {
   document.querySelectorAll('audio').forEach(audio => {
     audio.pause();
     audio.currentTime = 0;
   });
 
-  const selectedAudio = document.getElementById(id);
+  document.querySelectorAll('.discover-text').forEach(text => {
+    text.hidden = true;
+  });
+
+  const selectedAudio = document.getElementById(audioId);
+  const selectedText = document.getElementById(textId);
+
+  if (selectedText) {
+    selectedText.hidden = false;
+  }
+
   if (selectedAudio) {
     selectedAudio.play();
   }
