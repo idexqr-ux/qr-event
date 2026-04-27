@@ -96,7 +96,6 @@
   <button class="quiet-button" onclick="playSection('course-obstacles')">
   Course Obstacles
 </button>
-
 <audio id="course-obstacles" preload="none">
   <source src="audio/course-obstacles.mp3" type="audio/mpeg">
 </audio>
@@ -110,5 +109,18 @@
   </p>
 
 </main>
+  <script>
+function playSection(id) {
+  document.querySelectorAll('audio').forEach(audio => {
+    audio.pause();
+    audio.currentTime = 0;
+  });
+
+  const selectedAudio = document.getElementById(id);
+  if (selectedAudio) {
+    selectedAudio.play();
+  }
+}
+</script>
 </body>
 </html>
