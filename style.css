@@ -232,13 +232,13 @@ h2 {
 }
 
 .dot-1 { top: 24%; left: 66%; }  /* Start/Finish */
-.dot-2 { top: 32%; left: 84%; }  /* Upper right bend */
+.dot-2 { top: 32%; left: 82%; }  /* Upper right bend */
 .dot-3 { top: 58%; left: 86%; }  /* Right descent */
-.dot-4 { top: 74%; left: 73%; }  /* Apple Bucket */
-.dot-5 { top: 78%; left: 49%; }  /* Bottom straight */
-.dot-6 { top: 76%; left: 23%; }  /* Splash Fence */
+.dot-4 { top: 70%; left: 73%; }  /* Apple Bucket */
+.dot-5 { top: 70%; left: 49%; }  /* Bottom straight */
+.dot-6 { top: 72%; left: 23%; }  /* Splash Fence */
 .dot-7 { top: 52%; left: 10%; }  /* Left bend */
-.dot-8 { top: 24%; left: 28%; }  /* Upper left bend */
+.dot-8 { top: 26%; left: 28%; }  /* Upper left bend */
 
 .course-dot {
   transition: opacity 0.3s ease;
