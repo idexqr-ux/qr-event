@@ -23,6 +23,14 @@ body {
   line-height: 1.6;
 }
 
+.bunting {
+  width: 100%;
+  max-width: 420px;
+  display: block;
+  margin: 0 auto 18px;
+  opacity: 0.9;
+}
+
 h1 {
   font-size: 2rem;
   font-weight: normal;
