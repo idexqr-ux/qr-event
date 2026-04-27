@@ -218,7 +218,7 @@ h2 {
 
 #loos {
   top: 92%;
-  left: 30%;
+  left: 20%;
 }
 
 .course-dot {
@@ -232,7 +232,7 @@ h2 {
 }
 
 .dot-1 { top: 32%; left: 82%; }  /* Upper right bend */
-.dot-2 { top: 50%; left: 86%; }  /* Right descent */
+.dot-2 { top: 51%; left: 86%; }  /* Right descent */
 .dot-3 { top: 69%; left: 51%; }  /* Bottom straight */
 .dot-4 { top: 52%; left: 10%; }  /* Left bend */
 .dot-5 { top: 29%; left: 28%; }  /* Upper left bend */
