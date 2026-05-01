@@ -1,6 +1,6 @@
 :root {
   --bg: #f7f4ee;
-  --card: #fcfaf6;
+  --card-bg: #f7f6f3;
   --ink: #1f2a28;
   --muted: #66726e;
   --line: #ddd7cc;
@@ -81,7 +81,7 @@ h2 {
 }
 
 .card {
-  background: var(--card);
+  background: var(--card-bg);
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 24px;
