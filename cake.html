@@ -70,18 +70,30 @@
   </audio>
 
   <div id="enterCake" class="discover-text" hidden>
-    Bring your completed rosette cake to the Rosette Cake Tent before judging begins.
-    A steward will record your name and age category before placing your entry for display.
-  </div>
+  Bring your completed rosette cake to the Rosette Cake Tent before judging begins.
+  A steward will record your name and age category before placing your entry for display.
 
-  <div id="ageCategories" class="discover-text" hidden>
-    The competition includes Junior, Youth, and Adult categories,
-    so bakers of all ages can take part.
-  </div>
+  <button class="stop-audio-button" type="button" onclick="stopCurrentAudio()">
+    Stop audio
+  </button>
+</div>
 
-  <div id="winnersAnnounced" class="discover-text" hidden>
-    Winners will be announced during the afternoon prize presentation at 1:30pm.
-  </div>
+<div id="ageCategories" class="discover-text" hidden>
+  The competition includes Junior, Youth, and Adult categories,
+  so bakers of all ages can take part.
+
+  <button class="stop-audio-button" type="button" onclick="stopCurrentAudio()">
+    Stop audio
+  </button>
+</div>
+
+<div id="winnersAnnounced" class="discover-text" hidden>
+  Winners will be announced during the afternoon prize presentation at 1:30pm.
+
+  <button class="stop-audio-button" type="button" onclick="stopCurrentAudio()">
+    Stop audio
+  </button>
+</div>
 
 </section>
   <div class="button-group">
@@ -93,27 +105,40 @@
   </p>
 
   <script>
-function playSection(audioId, textId) {
-  document.querySelectorAll('audio').forEach(audio => {
-    audio.pause();
-    audio.currentTime = 0;
-  });
+  let currentAudio = null;
 
-  document.querySelectorAll('.discover-text').forEach(text => {
-    text.hidden = true;
-  });
+  function stopCurrentAudio() {
+    if (currentAudio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+      currentAudio = null;
+    }
 
-  const selectedAudio = document.getElementById(audioId);
-  const selectedText = document.getElementById(textId);
-
-  if (selectedText) {
-    selectedText.hidden = false;
+    document.querySelectorAll('audio').forEach(audio => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
   }
 
-  if (selectedAudio) {
-    selectedAudio.play();
+  function playSection(audioId, textId) {
+    stopCurrentAudio();
+
+    document.querySelectorAll('.discover-text').forEach(text => {
+      text.hidden = true;
+    });
+
+    const selectedAudio = document.getElementById(audioId);
+    const selectedText = document.getElementById(textId);
+
+    if (selectedText) {
+      selectedText.hidden = false;
+    }
+
+    if (selectedAudio) {
+      currentAudio = selectedAudio;
+      currentAudio.play();
+    }
   }
-}
 </script>
   
 </main>
