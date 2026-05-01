@@ -53,6 +53,16 @@ h2 {
   padding: 32px 20px 48px;
 }
 
+.wrap h1,
+.wrap .intro {
+  text-align: center;
+}
+
+.footer-wrap {
+  text-align: center;
+  margin-top: 32px;
+}
+
 .hero {
   text-align: center;
 }
@@ -152,6 +162,12 @@ h2 {
 
 .quiet-button:hover {
   background: var(--button-hover);
+}
+
+.back-button {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 16px;
 }
 
 .back-link a {
