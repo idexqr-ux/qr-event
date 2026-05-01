@@ -180,6 +180,27 @@ h2 {
   text-decoration: underline;
 }
 
+.stop-audio-button,
+.chips .stop-audio-button {
+  display: block;
+  margin: 22px auto 10px;
+  padding: 10px 20px;
+  border: 1px solid rgba(15, 82, 186, 0.45);
+  border-radius: 999px;
+
+  background: rgba(15, 82, 186, 0.08);
+  color: #0f52ba;
+
+  font: inherit;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  min-width: 130px;
+  text-align: center;
+  box-shadow: none;
+}
+
 .powered-by {
   margin-top: 8px;
   font-size: 0.9rem;
