@@ -277,3 +277,43 @@ h2 {
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+.ticket-card {
+  max-width: 520px;
+  margin: 22px auto;
+  padding: 24px 22px;
+  border-radius: 22px;
+  background: #f7f9f8;
+  border: 1px solid rgba(63, 74, 71, 0.16);
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+.ticket-label {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6f7c78;
+}
+
+.ticket-card h2 {
+  margin: 0 0 10px;
+  font-weight: 400;
+}
+
+.ticket-detail {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+  color: #3f4a47;
+}
+
+.ticket-code {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #d8e4df;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+}
