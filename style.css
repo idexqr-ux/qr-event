@@ -299,7 +299,7 @@ h2 {
   margin: 22px auto;
   padding: 24px 22px;
   border-radius: 22px;
-  background: #f7f9f8;
+  background: var(--card-bg);
   border: 1px solid rgba(63, 74, 71, 0.16);
   text-align: center;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
