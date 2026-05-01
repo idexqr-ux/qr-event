@@ -225,6 +225,9 @@
   <div id="raceIntroText" class="discover-text" hidden>
     Welcome to the Matchem Village Charity Race Day, where our brave runners
     gather at Willow Cottage for a little chaos, a little courage, and a lot of cheering.
+    <button class="stop-audio-button" type="button" onclick="stopCurrentAudio()">
+    Stop audio
+   </button>
   </div>
 
   <audio id="runners-and-riders" preload="none">
@@ -234,6 +237,9 @@
   <div id="runnersText" class="discover-text" hidden>
     Meet today’s runners and riders, each ready to take on the famous Matchem course
     with determination, style, and possibly questionable steering.
+    <button class="stop-audio-button" type="button" onclick="stopCurrentAudio()">
+    Stop audio
+   </button>
   </div>
 
   <audio id="course-obstacles" preload="none">
@@ -245,6 +251,9 @@
     the Apple Bucket Challenge, the daring Splash Fence, and the fearsome Mini Hurdles,
     before the final charge along the Willow Cottage Home Straight to the cheering crowds —
     this is where legends are made.
+    <button class="stop-audio-button" type="button" onclick="stopCurrentAudio()">
+    Stop audio
+   </button>
   </div>
 
   <div class="button-group">
@@ -258,33 +267,40 @@
 </main>
 
 <script>
-function playSection(audioId, textId) {
-  document.querySelectorAll('audio').forEach(audio => {
-    audio.pause();
-    audio.currentTime = 0;
-  });
+  let currentAudio = null;
 
-  document.querySelectorAll('.discover-text').forEach(text => {
-    text.hidden = true;
-  });
+  function stopCurrentAudio() {
+    if (currentAudio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+      currentAudio = null;
+    }
 
-  const selectedAudio = document.getElementById(audioId);
-  const selectedText = document.getElementById(textId);
-
-  if (selectedText) {
-    selectedText.hidden = false;
+    document.querySelectorAll('audio').forEach(audio => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
   }
 
-  if (selectedAudio) {
-    selectedAudio.play();
+  function playSection(audioId, textId) {
+    stopCurrentAudio();
+
+    document.querySelectorAll('.discover-text').forEach(text => {
+      text.hidden = true;
+    });
+
+    const selectedAudio = document.getElementById(audioId);
+    const selectedText = document.getElementById(textId);
+
+    if (selectedText) {
+      selectedText.hidden = false;
+    }
+
+    if (selectedAudio) {
+      currentAudio = selectedAudio;
+      currentAudio.play();
+    }
   }
-}
-function stopAudio() {
-  document.querySelectorAll('audio').forEach(audio => {
-    audio.pause();
-    audio.currentTime = 0;
-  });
-}
 </script>
 
 </body>
