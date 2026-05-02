@@ -177,13 +177,15 @@ h2 {
   margin-bottom: 16px;
 }
 
-.back-link a {
+.back-link,
+.back-link:visited {
   color: var(--muted);
   text-decoration: none;
   font-size: 0.95rem;
 }
 
-.back-link a:hover {
+.back-link:hover,
+.back-link:focus {
   text-decoration: underline;
 }
 
