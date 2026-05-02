@@ -47,6 +47,13 @@ h2 {
   margin-bottom: 16px;
 }
 
+.event-date {
+  margin: 6px 0 14px;
+  font-size: 0.98rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
 .wrap {
   max-width: 720px;
   margin: 0 auto;
